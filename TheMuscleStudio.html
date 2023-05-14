@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Muscle Studio</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Merienda:wght@300&family=Source+Code+Pro:wght@200;400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="Project/style.css" />
+  <style>
+    /* CSS Reset */
+    body {
+      font-family: "Lobster", cursive;
+      font-family: "Merienda", cursive;
+      font-family: "Source Code Pro", monospace;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("https://images.unsplash.com/photo-1571388201959-21295a059088?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
+      height: 800px;
+      width: 1534px;
+    }
+    .left {
+      position: absolute;
+      left: 50px;
+      top: 10px;
+      width: 90px;
+      /* border: 2px solid rgb(6, 6, 183); */
+      display: inline-block;
+    }
+    .center {
+      /* background-color: rgb(225, 122, 122); */
+      display: block;
+      width: 800px;
+      margin: 12px auto;
+      /* border: 2px solid red; */
+    }
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 27px;
+      /* border: 2px solid red; */
+      display: inline-block;
+    }
+    .navbar {
+      display: inline-block;
+      /* background-color: black; */
+    }
+    .navbar li {
+      color: white;
+      display: inline-block;
+      font-size: 20px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 34px;
+    }
+    .navbar li a:hover, .navbar li a:active {
+      color: rgba(195, 29, 51, 0.877);
+      text-decoration: underline;
+      padding: 34px;
+    }
+    .name {
+      width: 90px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 19px;
+    }
+    .btn {
+      font-family: "Lobster", cursive;
+      font-family: "Merienda", cursive;
+      font-family: "Source Code Pro", monospace;
+      margin: 0px 9px;
+      color: white;
+      background-color: black;
+      padding: 4px 14px;
+      border: 3px solid gray;
+      border-radius: 10px;
+      font-size: 17px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgb(47, 45, 45);
+    }
+    .container {
+      line-height: 12px;
+      border: 3px solid rgb(169, 165, 165);
+      margin: 180px 45px;
+      padding: 34px 23px;
+      width: 33%;
+      border-radius: 12px;
+    }
+    .form-group input {
+      font-family: "Lobster", cursive;
+      font-family: "Merienda", cursive;
+      font-family: "Source Code Pro", monospace;
+      text-align: center;
+      font-size: 15px;
+      margin: 5px;
+      display: block;
+      width: 200px;
+      padding: 6px;
+      border: 3px solid black;
+      border-radius: 9px;
+      margin: 11px auto;
+    }
+    .container h2 {
+      text-align: center;
+    }
+    .container button {
+      display: block;
+      width: 30%;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img
+          src="https://i.pinimg.com/736x/42/9d/63/429d631659a11a9eb666b103d811470a.jpg"
+          alt=""
+          width="90px"
+        />
+        <div class="name">The Muscle Studio</div>
+      </div>
+      <!-- center box for navigation -->
+      <div class="center">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <!-- Form of list will be filled here. -->
+      <h2>Join the Best Gym of Delhi/NCR</h2>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" id="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" id="" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" id="" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" id="" placeholder="Enter your Locality" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" id="" placeholder="Enter your Phone Number" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" id="" placeholder="Enter your Email Id" />
+        </div>
+        <br>
+        <button class="btn">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
